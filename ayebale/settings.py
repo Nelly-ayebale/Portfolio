@@ -53,7 +53,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pictures.apps.PicturesConfig',
+    'portfolio',
     'bootstrap4',
     'cloudinary',
 ]
