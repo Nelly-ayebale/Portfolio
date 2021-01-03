@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+{{block.super}}
+
+{% block content %}
+
+<canvas id="landing-canvas"></canvas>
+<div class="info-container">
+    <h1 style="font-weight: bold;">Hi,I'm <span class="name">Ayebale Nelly</span></h1>
+    <div class="contact">
+        <a target="_blank" href="https://www.linkedin.com/in/ayebale-nelly-4864b0202/"><i class="fas fa-linkedin"
+                style="color: white;"></i></a>
+        <a target="_blank" href="https://github.com/Nelly-ayebale"><i class="fas fa-github"
+                style="color: white;"></i></a>
+        <a target="_blank" href="#"><i class='fas fa-envelope' style="color: white;"> ayebalenelly26@gmail.com</i></a>
+    </div>
+    <div class="nav mt-3">
+        <ul>
+            <li><a id="btn" href="{%url 'about' %}">About</a></li>
+            <li><a id="btn" href="{%url 'skills' %}">Skills</a></li>
+            <li><a id="btn" href="{%url 'projects' %}">Projects</a></li>
+
+        </ul>
+    </div>
+</div>
+
+
+{% endblock%}

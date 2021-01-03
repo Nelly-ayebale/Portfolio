@@ -1,0 +1,59 @@
+{% extends 'base.html'%}
+{{block.super}}
+
+{% block content %}
+
+<canvas id="landing-canvas"></canvas>
+<div class="info-container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 style="font-weight: bold;"><span class="name">Portfolio</span></h1>
+        </div>
+
+        <div class="nav mt-3">
+            <ul>
+                <li><a id="btn" href="{%url 'home' %}">Home</a></li>
+
+
+
+            </ul>
+        </div>
+        <section id="section04" class="demo">
+            <h4 style="font-weight: bold;font-family: 'Open Sans', sans-serif;">View Projects</h4>
+            <a href="#projects"><span></span><i class="fas fa-chevron-down" style="color: white;"></i></a>
+        </section>
+    </div>
+</div>
+<h1 class="mt-2 text-center" style="font-weight: bold;font-family: 'Open Sans', sans-serif;">Welcome to My Projects.
+</h1>
+
+{% for project in projects %}
+<div class="container" id="projects">
+    <div class="card mb-3">
+        <img class="card-img-top" src="{{project.screenshot.url}}" alt="Card image cap">
+        <div class="card-body">
+            <h4 class="card-title" style="font-family: 'Open Sans', sans-serif;">Name: {{project.name}}</h4>
+            <h5 class="card-text" style="font-family: 'Open Sans', sans-serif;">Description: {{project.description}}.
+            </h5>
+            <h5 class="card-text" style="font-family: 'Open Sans', sans-serif;">Technologies Used:
+                {{project.technologies}}.
+            </h5>
+            <h5 class="card-text" style="font-family: 'Open Sans', sans-serif;">Link:<small class="text-muted"><a
+                        href="{{project.link}}"
+                        style="font-family: 'Open Sans', sans-serif;">{{project.link}}</a></small></h5>
+        </div>
+    </div>
+</div>
+{% endfor %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <a target="_blank" href="https://github.com/Nelly-ayebale" style="font-size:30px;"><i class="fas fa-github"
+                    style="color: black; font-size: 30px;"></i>Nelly-ayebale</a>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock%}

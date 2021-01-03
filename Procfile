@@ -1,0 +1,1 @@
+web: gunicorn ayebale.wsgi --log-file -

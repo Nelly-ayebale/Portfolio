@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+{% load static %}
+{% load cloudinary %}
+{{block.super}}
+
+{% block content %}
+
+<canvas id="landing-canvas"></canvas>
+<div class="info-container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 style="font-weight: bold;"><span class="name">Skills</span></h1>
+        </div>
+        {% for image in images %}
+        <div class="col-sm-6 col-md-3 pt-3">
+            <img src="{{image.image.url}}" alt="image" width="45px" height="45px">
+            <h4>{{image.name}}</h4>
+        </div>
+        {% endfor %}
+
+        <div class="nav mt-3">
+            <ul>
+                <li><a id="btn" href="{%url 'home' %}">Home</a></li>
+                <li><a id="btn" href="{%url 'projects' %}">Projects</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock%}
