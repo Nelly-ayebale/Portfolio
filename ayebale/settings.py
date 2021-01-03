@@ -75,7 +75,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 django_heroku.settings(locals())
 
-ROOT_URLCONF = 'gallery.urls'
+ROOT_URLCONF = 'ayebale.urls'
 
 TEMPLATES = [
     {
@@ -93,7 +93,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'gallery.wsgi.application'
+WSGI_APPLICATION = 'ayebale.wsgi.application'
 
 
 # Database
