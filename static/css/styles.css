@@ -34,7 +34,7 @@ body {
     flex-direction: col;
     flex-wrap: wrap;
     justify-content: center;
-    min-width: 300px;
+    min-width: 400px;
     /* padding: 20px 15px; */
     border-radius: 10px;
     /* backdrop-filter: blur(5px); */
