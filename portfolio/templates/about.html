@@ -2,18 +2,21 @@
 {{block.super}}
 
 {% block content %}
-<div class="container-fluid">
 
+<div class="container-fluid">
+    <canvas id="landing-canvas"></canvas>
     <div class="info-container">
-        <h1 style="font-weight: bold;"><span class="name">Who is Ayebale?</span></h1>
+        <h1 style="font-weight: bold;" class="text-center"><span class="name">About</span></h1>
         <div>
-            <h4 style="font-family: 'Open Sans', sans-serif;">Ayebale Nelly is a Full Stack Web Developer with extensive
+            <h4 style="font-family: 'Open Sans', sans-serif;" class="text-center">Ayebale Nelly is a Full Stack Web
+                Developer with extensive
                 experience in Front-End Development,Back-End
                 Development and relational Database systems using SQL and PostgreSQL.</h4>
 
         </div>
         <div>
-            <h4 style="font-family: 'Open Sans', sans-serif;">Ayebale is fueled by her passion for understanding the
+            <h4 style="font-family: 'Open Sans', sans-serif;" class="text-center">Ayebale is fueled by her passion for
+                understanding the
                 nuances
                 of coding. She considers
                 herself a ‘forever student,’ eager to both build on her academic foundations in Software Development and
@@ -21,30 +24,30 @@
                 development.</h4>
         </div>
 
-        <h1 style="font-weight: bold;"><span class="name">What is Ayebale looking forward to?</span></h1>
+        <h1 style="font-weight: bold;" class="text-center"><span class="name">What is Ayebale looking forward to?</span>
+        </h1>
         <div>
-            <h4 style="font-family: 'Open Sans', sans-serif;">
+            <h4 style="font-family: 'Open Sans', sans-serif;" class="text-center">
                 Ayebale is currently forwarding to pursue her degree in Software Engineering but is always welcome to
                 any
                 challenges and hirings.
 
             </h4>
         </div>
-        <div class="contact">
+        <div class="contact text-center">
 
             <a target="_blank" href="#"><i class='fas fa-envelope' style="color: white;">
                     ayebalenelly26@gmail.com</i></a>
         </div>
-        <div class="nav mt-3">
+        <div class="col-md-12 nav mt-3">
             <ul>
                 <li><a id="btn" href="{%url 'home' %}">Home</a></li>
                 <li><a id="btn" href="{%url 'skills' %}">Skills</a></li>
-
+                <li><a id="btn" href="{%url 'projects' %}">Projects</a></li>
 
             </ul>
         </div>
-
-
     </div>
 </div>
+
 {% endblock%}
