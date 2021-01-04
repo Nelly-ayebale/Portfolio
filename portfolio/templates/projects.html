@@ -28,36 +28,36 @@
         </div>
     </div>
 
+</div>
 
-
-    {% for project in projects %}
-    <div class="container" id="projects">
-        <div class="card mb-3">
-            <img class="card-img-top" src="{{project.screenshot.url}}" alt="Card image cap">
-            <div class="card-body">
-                <h4 class="card-title" style="font-family: 'Open Sans', sans-serif;">Name: {{project.name}}</h4>
-                <h5 class="card-text" style="font-family: 'Open Sans', sans-serif;">Description:
-                    {{project.description}}.
-                </h5>
-                <h5 class="card-text" style="font-family: 'Open Sans', sans-serif;">Technologies Used:
-                    {{project.technologies}}.
-                </h5>
-                <h5 class="card-text" style="font-family: 'Open Sans', sans-serif;">Link:<small class="text-muted"><a
-                            href="{{project.link}}"
-                            style="font-family: 'Open Sans', sans-serif;">{{project.link}}</a></small></h5>
-            </div>
-        </div>
-    </div>
-    {% endfor %}
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <a target="_blank" href="https://github.com/Nelly-ayebale" style="font-size:30px;"><i
-                        class="fas fa-github" style="color: black; font-size: 30px;"></i>Nelly-ayebale</a>
-            </div>
-
+{% for project in projects %}
+<div class="container" id="projects">
+    <div class="card mb-3">
+        <img class="card-img-top" src="{{project.screenshot.url}}" alt="Card image cap">
+        <div class="card-body">
+            <h4 class="card-title" style="font-family: 'Open Sans', sans-serif;">Name: {{project.name}}</h4>
+            <h5 class="card-text" style="font-family: 'Open Sans', sans-serif;">Description:
+                {{project.description}}.
+            </h5>
+            <h5 class="card-text" style="font-family: 'Open Sans', sans-serif;">Technologies Used:
+                {{project.technologies}}.
+            </h5>
+            <h5 class="card-text" style="font-family: 'Open Sans', sans-serif;">Link:<small class="text-muted"><a
+                        href="{{project.link}}"
+                        style="font-family: 'Open Sans', sans-serif;">{{project.link}}</a></small></h5>
         </div>
     </div>
 </div>
+{% endfor %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <a target="_blank" href="https://github.com/Nelly-ayebale" style="font-size:30px;"><i class="fas fa-github"
+                    style="color: black; font-size: 30px;"></i>Nelly-ayebale</a>
+        </div>
+
+    </div>
+</div>
+
 
 {% endblock%}
