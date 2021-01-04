@@ -5,29 +5,8 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <div class="info-container" style="margin-top: 50px;margin-left: 50px;">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 style="font-weight: bold;"><span class="name">Portfolio</span></h1>
-                    </div>
-
-                    <div class="nav mt-3">
-                        <ul>
-                            <li><a id="btn" href="{%url 'home' %}">Home</a></li>
-
-
-
-                        </ul>
-
-                    </div>
-
-                </div>
-                <div class="col-md-12">
-                    <section id="section04" class="demo">
-                        <a href="#projects" id="section04" class="demo"><span></span></a>
-                    </section>
-                </div>
-            </div>
+            <h1 style="font-family:Adinda Melia;color: #B2F302;font-size: 40px;font-weight: bold;"
+                class="text-center mt-5">Porfolio</h1>
         </div>
     </div>
 </div>
@@ -52,7 +31,15 @@
     </div>
 </div>
 {% endfor %}
+<div class="col-md-12 nav mt-3">
+    <ul>
+        <li><a id="btn" href="{%url 'home' %}">Home</a></li>
+        <li><a id="btn" href="{%url 'about' %}">About</a></li>
+        <li><a id="btn" href="{%url 'skills' %}">Skills</a></li>
 
+
+    </ul>
+</div>
 
 
 {% endblock%}

@@ -24,23 +24,23 @@ body {
 }
   
 .info-container {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(153, 140, 140, 0.95);
     backdrop-filter: saturate(180%) blur(5px);
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: col;
     flex-wrap: wrap;
     justify-content: center;
-    min-width: 400px;
-    /* padding: 20px 15px; */
+    min-width: 300px;
+    padding: 20px 15px; 
     border-radius: 10px;
-    /* backdrop-filter: blur(5px); */
     text-align: center;
     color: #333;
 }
+
   
 h1 {
       font-size: 16px;
@@ -55,6 +55,7 @@ h1 {
         
       
 }
+
 
 div .info-container {
       width: 50%;}
