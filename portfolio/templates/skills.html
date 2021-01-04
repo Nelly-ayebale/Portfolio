@@ -4,28 +4,30 @@
 {% block content %}
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <h1 style="font-family:Adinda Melia;color: #B2F302;font-size: 40px;font-weight: bold;"
-                class="text-center mt-5">Skills</h1>
+        <div class="info-container">
+            <div class="col-md-12">
+                <h1 style="font-family:Adinda Melia;color: #B2F302;font-size: 40px;font-weight: bold;"
+                    class="text-center mt-5">Skills</h1>
+            </div>
+            {% for image in images %}
+
+            <div class="col-sm-6 col-md-3 pt-3">
+                <img src="{{image.image.url}}" alt="image" width="45px" height="45px">
+                <h4>{{image.name}}</h4>
+            </div>
+
+
+            {% endfor %}
         </div>
-        {% for image in images %}
+        <div class="col-md-12 nav mt-3">
+            <ul>
+                <li><a id="btn" href="{%url 'home' %}">Home</a></li>
+                <li><a id="btn" href="{%url 'about' %}">About</a></li>
+                <li><a id="btn" href="{%url 'projects' %}">Projects</a></li>
 
-        <div class="col-sm-6 col-md-3 pt-3 ml-5">
-            <img src="{{image.image.url}}" alt="image" width="45px" height="45px">
-            <h4>{{image.name}}</h4>
+
+            </ul>
         </div>
-
-
-        {% endfor %}
-    </div>
-    <div class="col-md-12 nav mt-3">
-        <ul>
-            <li><a id="btn" href="{%url 'home' %}">Home</a></li>
-            <li><a id="btn" href="{%url 'about' %}">About</a></li>
-            <li><a id="btn" href="{%url 'projects' %}">Projects</a></li>
-
-
-        </ul>
     </div>
 </div>
 
