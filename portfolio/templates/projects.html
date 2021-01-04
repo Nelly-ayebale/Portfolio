@@ -2,33 +2,36 @@
 {{block.super}}
 
 {% block content %}
-
-<div class="container-fluid">
-    <div class="info-container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 style="font-weight: bold;"><span class="name">Portfolio</span></h1>
-            </div>
-
-            <div class="nav mt-3">
-                <ul>
-                    <li><a id="btn" href="{%url 'home' %}">Home</a></li>
-
-
-
-                </ul>
-
-            </div>
-
-        </div>
+<div class="container">
+    <div class="row">
         <div class="col-md-12">
-            <section id="section04" class="demo">
-                <a href="#projects" id="section04" class="demo"><span></span></a>
-            </section>
+            <div class="info-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 style="font-weight: bold;"><span class="name">Portfolio</span></h1>
+                    </div>
+
+                    <div class="nav mt-3">
+                        <ul>
+                            <li><a id="btn" href="{%url 'home' %}">Home</a></li>
+
+
+
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="col-md-12">
+                    <section id="section04" class="demo">
+                        <a href="#projects" id="section04" class="demo"><span></span></a>
+                    </section>
+                </div>
+            </div>
         </div>
     </div>
-
 </div>
+
 
 {% for project in projects %}
 <div class="container mt-5" id="projects">
@@ -49,15 +52,7 @@
     </div>
 </div>
 {% endfor %}
-<div class="container">
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <a target="_blank" href="https://github.com/Nelly-ayebale" style="font-size:30px;"><i class="fas fa-github"
-                    style="color: black; font-size: 30px;"></i>Nelly-ayebale</a>
-        </div>
 
-    </div>
-</div>
 
 
 {% endblock%}
